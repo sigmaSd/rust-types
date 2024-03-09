@@ -39,7 +39,7 @@ export class Result<T, E> {
     }
   }
 
-  static async wrap_async<T, E>(
+  static async wrapAsync<T, E>(
     callback: () => Promise<T>,
   ): Promise<Result<T, E>> {
     try {

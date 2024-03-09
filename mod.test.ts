@@ -19,12 +19,12 @@ Deno.test("Result", () => {
 
 Deno.test("Async Result", async () => {
   {
-    const result = await Result.wrap_async(() => Deno.readTextFile("./mod.ts"));
+    const result = await Result.wrapAsync(() => Deno.readTextFile("./mod.ts"));
     assert(result.isOk());
     assertEquals(result.ok, Deno.readTextFileSync("./mod.ts"));
   }
   {
-    const result = await Result.wrap_async<string, Deno.errors.NotFound>(() =>
+    const result = await Result.wrapAsync<string, Deno.errors.NotFound>(() =>
       Deno.readTextFile("doesnt-exist")
     );
     assert(result.isErr());
