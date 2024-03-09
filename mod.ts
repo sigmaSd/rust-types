@@ -44,9 +44,8 @@ export class Result<T, E> {
   ): Promise<Result<T, E>> {
     try {
       return new Result({ value: await callback(), error: undefined as E });
-      // deno-lint-ignore no-explicit-any
-    } catch (e: any) {
-      return new Result({ value: undefined as T, error: e as E });
+    } catch (e) {
+      return new Result({ value: undefined as T, error: e });
     }
   }
 }
