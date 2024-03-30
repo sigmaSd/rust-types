@@ -1,5 +1,5 @@
 {
-  "name": "rust-types",
+  "name": "@sigmasd/rust-types",
   "version": "0.1.0",
   "exports": {
     "./result": "./result.ts",
