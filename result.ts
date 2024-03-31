@@ -35,6 +35,13 @@ export class Result<T, E> {
     return this.#value as T;
   }
 
+  unwrapOr(other: T): T {
+    if (this.#error !== EMPTY) {
+      return other;
+    }
+    return this.#value as T;
+  }
+
   static wrap<T, E>(
     callback: () => T,
   ): Result<T, E> {

@@ -15,6 +15,8 @@ Deno.test("Result", () => {
     assert(result.isErr());
     //@ts-ignore: code does exist
     assertEquals(result.err.code, "ENOENT");
+
+    assertEquals(result.unwrapOr("new value"), "new value");
   }
 });
 
