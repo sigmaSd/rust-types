@@ -2,6 +2,7 @@
  * A module for handling results of computations, representing either success or failure.
  *
  * @example
+ * ```ts
  * // Creating a Result representing a successful computation
  * const result = Ok(42);
  *
@@ -13,6 +14,7 @@
  *
  * // Retrieving the error from the Result
  * const error = errorResult.err; // "Something went wrong"
+ * ```
  *
  * @module
  */

@@ -1,7 +1,8 @@
 /**
  * A module for handling optional values.
- * @module Option
+ *
  * @example
+ * ```ts
  * // Creating an Option with a value
  * const option = Option.wrap(42);
  *
@@ -16,6 +17,9 @@
  *
  * // Checking if the Option is empty
  * const isEmpty = emptyOption.isNone(); // true
+ * ```
+ *
+ * @module
  */
 export class Option<T> {
   #value: T | undefined | null;
