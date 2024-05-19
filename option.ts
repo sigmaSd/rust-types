@@ -4,13 +4,13 @@
  * @example
  * ```ts
  * // Creating an Option with a value
- * const option = Option.wrap(42);
+ * const option = Option.wrap(41);
  *
  * // Checking if the Option has a value
  * const hasValue = option.isSome(); // true
  *
  * // Getting the value from the Option
- * const value = option.some; // 42
+ * const value = option.some; // 41
  *
  * // Creating an Option without a value
  * const emptyOption = Option.wrap(null);

@@ -2,11 +2,15 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "jsr:@pikisoft/duckduckgo-search": "jsr:@pikisoft/duckduckgo-search@0.0.1",
       "jsr:@std/assert": "jsr:@std/assert@0.221.0",
       "jsr:@std/assert@0.221.0": "jsr:@std/assert@0.221.0",
       "jsr:@std/fmt@^0.221.0": "jsr:@std/fmt@0.221.0"
     },
     "jsr": {
+      "@pikisoft/duckduckgo-search@0.0.1": {
+        "integrity": "02b7ee4938f85369fc2c1d766b7e522e70eea345fc9b5844b12320a7487b1829"
+      },
       "@std/assert@0.221.0": {
         "integrity": "a5f1aa6e7909dbea271754fd4ab3f4e687aeff4873b4cef9a320af813adb489a",
         "dependencies": [
